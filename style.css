@@ -1,0 +1,82 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 600px;
+    box-shadow:  0 0 10px #000000;
+    padding: 5px;
+    margin: 200px;
+}
+.btn-title{
+    font-size: 20px;
+    transform: translateY(-119px);
+    position: relative;
+    left: 22px;
+    
+}
+.btn-title .Osama{
+    color: rgb(86, 86, 228);
+}
+.btn-words{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-119px);
+}
+.btn-words .btn-facebook{
+   display: flex;
+   align-items: center;
+}
+.btn-words .btn-facebook .facebook{
+    position: relative;
+    right: 160px;
+}
+.btn-words .btn-facebook .OsElzero{
+    position: relative;
+    left: 160px;
+    font-size: larger;
+}
+.btn-words .btn-twitter{
+    display: flex;
+    align-items: center;
+}
+.btn-words .btn-twitter .twitter{
+    position: relative;
+    right: 160px;
+}
+.btn-words .btn-twitter .OsElzero{
+    position: relative;
+    left: 160px;
+    font-size: larger;
+}
+.btn-words .btn-linkedin{
+    display: flex;
+    align-items: center;
+}
+.btn-words .btn-linkedin .linkedin{
+    position: relative;
+    right: 160px;
+}
+.btn-words .btn-linkedin .OsElzero{
+    position: relative;
+    left: 160px;
+    font-size: larger;
+}
+img{
+    width: 100px;
+    height: 100px;
+    transform: translateY(-102px);
+}
+.A{
+    font-size: 20px;
+    transform: translateY(483px);
+    width: 30px;
+    height: 30px;
+    background-color: rgb(18, 22, 230);
+    color: white;
+    position: relative;
+    left: 249px;
+}
