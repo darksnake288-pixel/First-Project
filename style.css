@@ -1,20 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 16px 60px;
+}
 .container{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 600px;
-    width: 600px;
+    width: 100%;
+    max-width: 610px;
+    min-height: 610px;
     box-shadow:  0 0 10px #000000;
-    padding: 5px;
-    margin: 200px;
+    padding: 50px 44px 40px;
 }
 .btn-title{
     font-size: 20px;
-    transform: translateY(-119px);
-    position: relative;
-    left: 22px;
-    
+    text-align: center;
 }
 .btn-title .Osama{
     color: rgb(86, 86, 228);
@@ -22,61 +31,53 @@
 .btn-words{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-119px);
+    width: 100%;
 }
-.btn-words .btn-facebook{
-   display: flex;
-   align-items: center;
-}
-.btn-words .btn-facebook .facebook{
-    position: relative;
-    right: 160px;
-}
-.btn-words .btn-facebook .OsElzero{
-    position: relative;
-    left: 160px;
-    font-size: larger;
-}
-.btn-words .btn-twitter{
-    display: flex;
-    align-items: center;
-}
-.btn-words .btn-twitter .twitter{
-    position: relative;
-    right: 160px;
-}
-.btn-words .btn-twitter .OsElzero{
-    position: relative;
-    left: 160px;
-    font-size: larger;
-}
+.btn-words .btn-facebook,
+.btn-words .btn-twitter,
 .btn-words .btn-linkedin{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 16px;
 }
-.btn-words .btn-linkedin .linkedin{
-    position: relative;
-    right: 160px;
-}
-.btn-words .btn-linkedin .OsElzero{
-    position: relative;
-    left: 160px;
+.btn-words .OsElzero{
     font-size: larger;
 }
 img{
+    position: absolute;
+    top: -62px;
+    left: 50%;
     width: 100px;
     height: 100px;
-    transform: translateY(-102px);
+    transform: translateX(-50%);
 }
 .A{
+    position: absolute;
+    bottom: -43px;
+    right: 41px;
     font-size: 20px;
-    transform: translateY(483px);
     width: 30px;
     height: 30px;
     background-color: rgb(18, 22, 230);
     color: white;
-    position: relative;
-    left: 249px;
+}
+
+@media (max-width: 480px){
+    .container{
+        min-height: 0;
+        padding: 50px 20px 32px;
+    }
+    .btn-title{
+        font-size: 16px;
+    }
+    .btn-words h1{
+        font-size: 24px;
+    }
+    .btn-words .OsElzero{
+        font-size: medium;
+    }
+    .A{
+        right: 20px;
+    }
 }
